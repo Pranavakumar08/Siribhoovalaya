@@ -28,7 +28,7 @@ def save_grid(grid_alpha, txt_filename="siribhoovalaya.txt", csv_filename="sirib
     print(f"Saved grid as:\n  TXT = {txt_filename}\n  CSV = {csv_filename}")
 
 
-def traverse_grid_up_right(grid, start_row=0, start_col=13):
+def traverse_grid(grid, start_row=0, start_col=13):
     n = len(grid)
     result = []
     visited = []
@@ -68,5 +68,5 @@ grid_alpha = convert_grid_to_alphabetic(grid_numbers, siribhoovalaya_roman)
 # Saving traversed grids
 save_grid(grid_alpha, "siribhoovalaya_kannada.txt", "siribhoovalaya_kannada.csv")
 
-output_text = traverse_grid_up_right(grid_alpha)
+output_text = traverse_grid(grid_alpha)
 print("Output Text:", output_text)

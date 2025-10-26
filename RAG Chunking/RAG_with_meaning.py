@@ -16,7 +16,7 @@ def setup_llm_chain(word):
     
     prompt = ChatPromptTemplate.from_messages(
         [
-            ("system", "You are an AI expert on word separation and segmentation in the Kannada language. You will separate or segment the one long word given to you in Kannada into accurate smaller words as the word given to you doesn't have spacing. The word is taken from an ancient text called Siribhoovalaya. The word is given majorly in IAST transcription format exxcept for 'o' and 'ō' which are in ISO format. The resulting message that you provide should contain the list of the separated words."),
+            ("system", "You are an AI expert on word separation and segmentation in the Kannada language. You will separate or segment the one long word given to you in Kannada into accurate smaller words as the word given to you doesn't have spacing. The word is taken from an ancient text called Siribhoovalaya. The word is given majorly in IAST transcription format exxcept for 'o' and 'ō' which may be in either ISO or IAST format. The resulting message that you provide should contain the list of the separated words. If you can ascertain the meanings of individual words or phrases then give the meaning of the whole compound word text in the end."),
             ("user", f"The following is the long Kannada word : {word}"),
         ]
     )

@@ -1,6 +1,4 @@
-service-account.json
 .env
-Translation_API.ipynb
 RAG Chunking/.env
 RAG Chunking/venv
 kn_IndicNER_v1.0/kn_train.json
